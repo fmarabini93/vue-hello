@@ -4,9 +4,10 @@ var root = new Vue(
             el: "#root",
             data: {
                   message: "Spring",
+                  subtitle: "",
                   image: "img/spring.jpg"
             },
-            methods: {
+            methods: { 
                   changeSeason: function() {
                         switch (this.message) {
                               case "Spring":

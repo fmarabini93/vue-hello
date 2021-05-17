@@ -23,20 +23,53 @@ body {
       background-color: rgba(0, 0, 0, 0.4);
 }
 
+@keyframes myTitle {
+      0% {
+            opacity: 1;
+      }
+      50% {
+            opacity: 0.5;
+      }
+      100% {
+            opacity: 1;
+      }
+}
+
 h1 {
-      font-size: 60px;
+      font-size: 70px;
       text-transform: uppercase;
+      animation: myTitle 3s linear infinite;
+}
+
+p {
+      font-size: 50px;
+}
+
+input {
+      text-align: center;
+      border: none;
+      font-family: 'Dancing Script', cursive;
+      font-size: 30px;
+      background-color: rgba(0, 0, 0, 0);
+      animation: myTitle 3s linear infinite;
+}
+
+::placeholder {
+      color: #ffffff;
+      opacity: 1;
 }
 
 img {
-      max-width: 100%;
+      width: 100%;
+      height: 100vh;
 }
 
 button {
       border: none;
       cursor: pointer;
       font-family: 'Dancing Script', cursive;
-      font-size: 40px;
+      font-size: 50px;
       color: #ffffff;
       background-color: rgba(0, 0, 0, 0);
+      animation: myTitle 3s linear infinite;
 }
